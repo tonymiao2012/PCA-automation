@@ -1,0 +1,118 @@
+﻿@model PCAautomation.Models.PCAModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>PCAModel</legend>
+
+        @Html.HiddenFor(model => model.RecordID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PriceChangeDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PriceChangeDate)
+            @Html.ValidationMessageFor(model => model.PriceChangeDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChangeAgree)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChangeAgree)
+            @Html.ValidationMessageFor(model => model.ChangeAgree)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Client)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Client)
+            @Html.ValidationMessageFor(model => model.Client)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Facility)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Facility)
+            @Html.ValidationMessageFor(model => model.Facility)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PartNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PartNumber)
+            @Html.ValidationMessageFor(model => model.PartNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Descript)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Descript)
+            @Html.ValidationMessageFor(model => model.Descript)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Manufacturer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Manufacturer)
+            @Html.ValidationMessageFor(model => model.Manufacturer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChangeDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChangeDate)
+            @Html.ValidationMessageFor(model => model.ChangeDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.WINUserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.WINUserName)
+            @Html.ValidationMessageFor(model => model.WINUserName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Export)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Export)
+            @Html.ValidationMessageFor(model => model.Export)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

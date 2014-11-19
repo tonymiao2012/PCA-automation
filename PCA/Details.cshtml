@@ -1,0 +1,92 @@
+﻿@model PCAautomation.Models.PCAModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>PCAModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PriceChangeDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PriceChangeDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChangeAgree)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChangeAgree)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Client)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Client)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Facility)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Facility)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PartNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PartNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Descript)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Descript)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Manufacturer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Manufacturer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChangeDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChangeDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.WINUserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WINUserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Export)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Export)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RecordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
